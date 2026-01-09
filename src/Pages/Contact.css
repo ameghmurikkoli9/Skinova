@@ -1,0 +1,173 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #d7cec4;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+    margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.contact-title {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 6rem;
+  font-weight: 500;
+  color: #1a1c17;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.contact-subtitle {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.6rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 3.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-group label {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.4rem;
+  color: #6b6b6b;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 12px;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.5rem;
+  color: #000000;
+  background: #f5f5f5;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: black;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: inherit;
+}
+
+.submit-button {
+  align-self: center;
+  background: #3c4433;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1.4rem 3rem;
+  font-size: 1.6rem;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.submit-button:focus,
+.submit-button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.submit-button:hover {
+  background: #2d3326;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(60, 68, 51, 0.2);
+  border-color: transparent;
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-success {
+  text-align: center;
+  background: #4caf50;
+  color: white;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  margin-top: 1rem;
+  animation: fadeInOut 0.3s ease-in;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 4rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-container {
+    padding: 2.5rem;
+  }
+}

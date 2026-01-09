@@ -1,0 +1,350 @@
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: 9998;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cart-sidebar {
+  position: fixed;
+  margin-top: 10rem;
+  top: 0;
+  right: 0;
+  width: 520px;
+  max-width: 90vw;
+  height: 100vh;
+  background: #f8f7f5;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cart-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #f0f0f0;
+  border-radius: 20px 0 0 0;
+  
+}
+
+.cart-sidebar-title {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1a1c17;
+  margin: 0;
+}
+
+.cart-close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #1a1c17;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  outline: none;
+}
+
+.cart-close-btn:focus,
+.cart-close-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.cart-close-btn:hover {
+  transform: scale(1.1);
+}
+
+.cart-sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  background: #f8f7f5;
+}
+
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cart-empty p {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.6rem;
+  color: #6b6b6b;
+  margin-bottom: 2rem;
+}
+
+.browse-shop-btn {
+  background: #3c4433;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.browse-shop-btn:focus,
+.browse-shop-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.browse-shop-btn:hover {
+  background: #2d3326;
+  transform: translateY(-2px);
+}
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.cart-item-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background: #f8f7f5;
+}
+
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.cart-item-name {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.5rem;
+  color: #1a1c17;
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+}
+
+.cart-item-price {
+  font-size: 1.5rem;
+  color: #1a1c17;
+  font-weight: 500;
+  margin: 0;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+}
+
+.cart-item-size {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.2rem;
+  color: #6b6b6b;
+  margin: 0;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 0.5rem;
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f7f5;
+  border: 1px solid #e5e5e5;
+}
+
+.quantity-btn-decrease,
+.quantity-btn-increase {
+  flex: 0 0 36px;
+  height: 40px;
+  border: none;
+  background: #d7cec4;
+  color: #1a1c17;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  outline: none;
+  padding: 0;
+}
+
+.quantity-btn-decrease:focus,
+.quantity-btn-decrease:focus-visible,
+.quantity-btn-increase:focus,
+.quantity-btn-increase:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.quantity-btn-decrease:hover,
+.quantity-btn-increase:hover {
+  background: #c4b8a8;
+}
+
+.quantity-value {
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1a1c17;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  min-width: 45px;
+  padding: 0 0.5rem;
+}
+
+.cart-item-remove {
+  position: absolute;
+  top: 0rem;
+  right: -1rem;
+  background: transparent;
+  border: none;
+  color: #6b6b6b;
+  font-size: 1.8rem;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  outline: none;
+  font-weight: 300;
+}
+
+.cart-item-remove:focus,
+.cart-item-remove:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.cart-item-remove:hover {
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
+.cart-sidebar-footer {
+  padding: 2rem;
+  border-top: 1px solid #e5e5e5;
+  background: #ffffff;
+  margin-top: auto;
+}
+
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.cart-subtotal-label {
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.6rem;
+  color: #1a1c17;
+  font-weight: 400;
+}
+
+.cart-subtotal-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1c17;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+}
+
+.cart-checkout-btn {
+  display: block;
+  width: 100%;
+  background: #3e523f;
+  color: #ffffff;
+  padding: 1.4rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-checkout-btn:focus,
+.cart-checkout-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.cart-checkout-btn:hover {
+  background: #2d3e2d;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}

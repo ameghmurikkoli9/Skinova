@@ -1,0 +1,408 @@
+/* Navbar.css */
+
+/* Wrapper to position the navbar fixed at the top */
+.nav-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* Allows clicking through the empty space around the navbar */
+}
+
+.nav-wrapper.nav-hidden {
+  transform: translateY(-150%);
+}
+
+/* The actual navbar pill */
+.nav {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 6rem;
+  max-width: 1600px;
+  padding: 1rem 2.5rem;
+  background: #ffffff;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  pointer-events: auto; /* Re-enable clicks on the navbar itself */
+}
+
+/* LEFT SECTION - Links */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1; /* Takes up available space to push logo to center */
+}
+
+.nav-left a,
+.nav-left .shop-nav-link,
+.nav-left .collections-nav-link {
+  text-decoration: none;
+  color: #1a1c17;
+  font-family: 'Figtree', sans-serif; /* Clean sans-serif */
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-left a:hover {
+  color: #666;
+}
+
+/* CENTER SECTION - Logo */
+.nav-center {
+  text-decoration: none;
+  color: #1a1c17;
+  font-family: 'Sentient', serif; /* Elegant serif font */
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  flex: 1; /* Center alignment helper */
+  display: flex;
+  justify-content: center;
+
+}
+
+/* RIGHT SECTION - Icons */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  flex: 1; /* Balances the left section */
+}
+
+.icons {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1c17;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+  color: #555;
+}
+
+.flag {
+  font-size: 1.2rem;
+}
+
+/* Cart Badge */
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #1a1c17;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DROPDOWN STYLES */
+.shop-link-wrapper,
+.collections-link-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shop-dropdown,
+.collections-dropdown {
+  position: absolute;
+  top: 100%; /* Position right below the link */
+  left: -20px; /* Adjust alignment */
+  padding-top: 20px; /* Gap to bridge hover */
+  z-index: 1001;
+  cursor: default;
+}
+
+/* Shop Dropdown Content */
+.dropdown-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  padding: 2rem;
+  display: flex;
+  gap: 3rem;
+  width: 600px;
+}
+
+.dropdown-left {
+  flex: 1;
+  border-right: 1px solid #eee;
+  padding-right: 2rem;
+}
+
+.dropdown-shop-title {
+  color: #1a1c17;
+  font-family: 'Sentient', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dropdown-categories {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dropdown-categories a {
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.dropdown-categories a:hover {
+  color: #000;
+  padding-left: 5px;
+}
+
+.dropdown-right {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dropdown-product-card {
+  position: relative;
+  text-align: center;
+}
+
+.product-heart-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-discount-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #d4a59a;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.dropdown-product-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-product-name {
+  font-size: 0.9rem;
+  margin: 0;
+  font-family: 'Figtree', sans-serif;
+}
+
+.dropdown-product-price {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 2px 0 0;
+}
+
+/* Collections Dropdown Content */
+.collections-dropdown-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  color: #1a1c17;
+  width: 700px;
+  height: 340px;
+}
+
+.collection-category-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.collection-category-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collection-category-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-category-name {
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: 'Sentient', serif;
+}
+
+.collection-arrow-btn {
+  background: #f5f5f5;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  transition: background 0.2s;
+}
+
+.collection-arrow-btn:hover {
+  background: #e0e0e0;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+/* Mobile Menu Button - Hidden by default on desktop */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #1a1c17;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f8f7f5;
+  z-index: 2000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto; /* Ensure menu is clickable */
+}
+
+.mobile-menu-overlay.open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu-title {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #1a1c17;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+}
+
+.mobile-menu-links a {
+  font-family: 'Sentient', serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #1a1c17;
+  transition: color 0.2s;
+}
+
+.mobile-menu-links a:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 10px 20px;
+    width: 90%;
+  }
+
+  .nav-left {
+    display: none; /* Hide desktop links */
+  }
+
+  .mobile-menu-btn {
+    display: block; /* Show hamburger */
+  }
+
+  .nav-center {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-right .icons:nth-child(2), /* Person */
+  .nav-right .icons:nth-child(3) { /* Search */
+    display: none;
+  }
+  
+  .flag {
+    display: none;
+  }
+}

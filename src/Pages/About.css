@@ -1,0 +1,463 @@
+.about-page {
+  background-color: #d7cec4;
+  min-height: 100vh;
+}
+
+.about-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center right 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f9fafb;
+  box-sizing: border-box;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(15, 23, 42, 0.28),
+    rgba(15, 23, 42, 0.7)
+  );
+  z-index: 0;
+}
+
+.about-hero__overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 8vw;
+  display: flex;
+  align-items: center;
+}
+
+.about-hero__content {
+  max-width: 80rem;
+}
+
+
+.about-hero__title {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 10.2rem;
+  line-height: 1;
+  font-weight: 500;
+  margin-top: 24rem;
+  max-width: 72rem;
+}
+
+.about-hero__title span {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #e5e7eb;
+  opacity: 0.8;
+  line-height: 0.7;
+}
+
+.about-hero__subtitle {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #e5e7eb;
+  max-width: 49rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    min-height: 90vh;
+  }
+
+  .about-hero__overlay {
+    padding: 4rem 6vw;
+    align-items: flex-end;
+  }
+}
+
+
+
+.info-box {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 25rem;
+  height: 18rem;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 3rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.info h2 {
+
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+  color: #000;
+}
+
+.info h3 {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+  color: #000;
+}
+
+.info p {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #6b6b6b;
+  margin-top: 0.4rem;
+}
+
+.reviews {
+  width: 100%;
+  padding: 6rem 8vw;
+  box-sizing: border-box;
+}
+
+.reviews h1 {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  text-align: left;
+  margin: 0;
+}
+
+.reviews span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.reviews {
+  margin-left: 0;
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+
+.stars {
+  margin-left: auto;
+  text-align: right;
+  font-size: 1.9rem;
+  margin-top: -6rem; /* Move slightly upwards without using position */
+}
+.stars span{
+    font-family: Sentient, "Sentient Placeholder", serif ;
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+.about-container{
+  margin-top: -5rem;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 6vw;
+  box-sizing: border-box;
+  gap: 4rem;
+
+
+}
+
+
+.left,.right{
+  flex: 1;                 
+  display: flex;
+  flex-direction: column;
+}
+
+.left-img {
+  width: 100%;
+  height: 82vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.left-content,
+.right-content {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.left-content,
+.right-content {
+  padding: 4rem;
+}
+
+
+.left-content{
+  width: 100%;
+  height: 70vh;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 16px;
+  
+}
+
+.left-content h5{
+
+  font-family: Sentient, "Sentient Placeholder", serif;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 100;
+}
+.left-content h2{
+  font-family: Sentient, "Sentient Placeholder", serif;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.left-content h2 span{
+  font-style: italic;
+  font-weight: 300;
+}
+.left-content p{
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 1.38rem;
+  line-height: 1.9rem;
+  margin-bottom: 1.5rem;
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  margin-left: 2rem;
+  opacity: 0.6;
+}
+
+
+.right{
+  width: 100%;
+  color: #000;
+  border-radius: 16px;
+  gap: 4rem;
+}
+.right-content{
+  height: 70vh;
+  background-color: #ffffff;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  margin-left: 2rem;
+  font-size: 4.5rem;
+  line-height: 3.9rem;
+  font-weight: 600;
+  border-radius: 16px;
+
+
+}
+.right-content h5{
+
+  font-family: Sentient, "Sentient Placeholder", serif;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 100;
+}
+.right-content h2{
+  font-family: Sentient, "Sentient Placeholder", serif;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+
+}
+
+.right-content h2 span{
+  font-style: italic;
+  font-weight: 300;
+}
+.right-content p{
+  font-family: Figtree, "Figtree Placeholder", sans-serif;
+  font-size: 1.34rem;
+  line-height: 1.9rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  opacity: 0.6;
+  font-weight: normal;
+
+}
+
+.right-image{
+  width: 96%;
+  height: 82vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin-left: 2rem;
+}
+
+
+
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 1.9rem;
+  line-height: 3rem;
+  font-size: 6rem;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: black;
+  font-size: 1.5rem;
+}
+.icon-row span {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 400;
+  
+}
+
+.icon {
+  color: black;
+  flex-shrink: 0;
+}
+
+/* Instagram carousel */
+.instagram {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+  position: relative;
+}
+
+.insta-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.insta-viewport:hover .insta-track {
+  animation-play-state: paused;
+}
+
+.insta-track {
+  display: flex;
+  gap: 2.2rem;
+  will-change: transform;
+  animation: insta-scroll 98s linear infinite;
+}
+
+.insta-card {
+  position: relative;
+  flex: 0 0 440px;
+  height: 440px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.insta-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.insta-caption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-family: Sentient, "Sentient Placeholder", serif;
+}
+
+@keyframes insta-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.insta-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.insta-heading-text {
+  font-family: Sentient, "Sentient Placeholder", serif;
+  font-size: 4.2rem;
+  color: #1a1c17;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.insta-heading-images {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 110px;
+  height: 90px;
+  margin: 0 0.5rem;
+}
+
+.insta-heading-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 6px solid #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  position: absolute;
+  top: 0;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.insta-heading-img.img-1 {
+  left: 0;
+  z-index: 2;
+  transform: rotate(-8deg);
+}
+
+.insta-heading-img.img-2 {
+  left: 38px;
+  z-index: 1;
+  transform: rotate(10deg);
+}

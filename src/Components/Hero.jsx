@@ -1,7 +1,7 @@
 // src/Components/Hero.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import videoSrc from "../Images/6666679-uhd_4096_1974_30fps.mp4";
+import videoSrc from "../Images/bg-video.mp4";
 import "./Hero.css";
 
 const SLIDE_COUNT = 3;

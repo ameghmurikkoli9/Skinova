@@ -345,3 +345,161 @@ html, body {
   border-color: transparent;
 }
 
+@media (max-width: 1024px) {
+  .home-hero {
+    height: 100vh;
+  }
+
+  .hero-text,
+  .slide-content2,
+  .slide-content3 {
+    left: 6%;
+    max-width: 680px;
+  }
+
+  .hero-title,
+  .hero-title2,
+  .hero-title3 {
+    font-size: 5.5rem;
+  }
+
+  .hero-subtitle,
+  .hero-subtitle2,
+  .hero-subtitle3 {
+    font-size: 6.5rem;
+    top: 1.5rem;
+  }
+
+  .hero-description,
+  .hero-description2,
+  .hero-description3 {
+    font-size: 26px;
+  }
+
+  .scroll-btn,
+  .scroll-btn.left,
+  .scroll-btn.right {
+    width: 56px;
+    height: 56px;
+    font-size: 36px;
+  }
+
+  .scroll-btn.left {
+    left: 16px;
+  }
+
+  .scroll-btn.right {
+    right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    height: 92vh;
+  }
+
+  .slide-content {
+    padding: 120px 1.5rem 40px;
+    max-width: 100%;
+  }
+
+  .hero-text,
+  .slide-content2,
+  .slide-content3 {
+    position: relative;
+    top: auto;
+    left: 0;
+    transform: none;
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title,
+  .hero-title2,
+  .hero-title3 {
+    position: static;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+  }
+
+  .hero-subtitle,
+  .hero-subtitle2,
+  .hero-subtitle3 {
+    position: static;
+    font-size: clamp(2.6rem, 7vw, 4rem);
+    margin: 10px 0 14px;
+  }
+
+  .hero-description,
+  .hero-description2,
+  .hero-description3 {
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    margin: 0 auto 20px;
+    max-width: 26rem;
+  }
+
+  .hero-btn,
+  .hero-btn2,
+  .hero-btn3 {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .scroll-btn,
+  .scroll-btn.left,
+  .scroll-btn.right {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero {
+    height: 95vh;
+  }
+
+  .hero-title,
+  .hero-title2,
+  .hero-title3 {
+    font-size: clamp(3.1rem, 7vw, 3rem);
+    line-height: 1rem;
+    margin-top: 13rem;
+
+  }
+
+  .hero-subtitle,
+  .hero-subtitle2,
+  .hero-subtitle3 {
+    font-size: clamp(2.3rem, 8vw, 3.2rem);
+  }
+
+  .hero-description,
+  .hero-description2,
+  .hero-description3 {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .Poster {
+    height: 70vh;
+    width: 95vw;
+    border-radius: 2rem;
+  }
+
+  .poster-content {
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .poster-content h1 {
+    font-size: 4rem;
+  }
+
+  .poster-content p {
+    font-size: 1.6rem;
+  }
+}

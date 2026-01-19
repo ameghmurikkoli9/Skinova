@@ -143,11 +143,47 @@
 
   .products-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
   }
 
   .favourite-empty {
     padding: 4rem 2rem;
     min-height: 300px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .favourite-title {
+    font-size: 5rem;
+  }
+
+  .product-image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .favourite-title {
+    font-size: 3rem;
+  }
+
+  .breadcrumb,
+  .sort-by {
+    font-size: 1.1rem;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-card {
+    max-width: 320px;
   }
 }
 

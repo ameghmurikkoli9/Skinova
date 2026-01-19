@@ -461,3 +461,149 @@
   z-index: 1;
   transform: rotate(10deg);
 }
+
+@media (max-width: 1024px) {
+  .about-hero__overlay {
+    padding: 4rem 6vw;
+    align-items: flex-end;
+  }
+
+  .about-hero__title {
+    font-size: 6rem;
+    margin-top: 14rem;
+  }
+
+  .about-hero__subtitle {
+    font-size: 1.6rem;
+  }
+
+  .reviews {
+    padding: 4rem 6vw;
+  }
+
+  .reviews h1 {
+    font-size: 4rem;
+  }
+
+  .stars {
+    margin-top: -3rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 4rem 6vw;
+  }
+
+  .left-img,
+  .right-image {
+    height: 420px;
+  }
+
+  .left-content,
+  .right-content {
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero__title {
+    font-size: 4.4rem;
+    margin-top: 10rem;
+  }
+
+  .about-hero__subtitle {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .info h2 {
+    font-size: 2.4rem;
+  }
+
+  .info h3 {
+    font-size: 1.8rem;
+  }
+
+  .info p {
+    font-size: 1.3rem;
+  }
+
+  .reviews h1 {
+    font-size: 3rem;
+  }
+
+  .stars {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .left-content,
+  .right-content {
+    padding: 2.5rem;
+  }
+
+  .left-content h2,
+  .right-content h2 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero__title {
+    font-size: 3.4rem;
+    margin-top: 8rem;
+  }
+
+  .about-hero__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .left-img,
+  .right-image {
+    height: 300px;
+  }
+
+  .left-content h2,
+  .right-content h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  .left-content p,
+  .right-content p {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+
+  .icon-list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .insta-card {
+    flex: 0 0 300px;
+    height: 300px;
+  }
+
+  .insta-heading-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .insta-card {
+    flex: 0 0 240px;
+    height: 240px;
+  }
+
+  .insta-heading-text {
+    font-size: 2.2rem;
+  }
+}

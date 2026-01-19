@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../Context/CartContext.jsx";
 import "./Cart.css";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, clearCart, getTotalPrice } = useCart();
+  const navigate = useNavigate();
 
   return (
     <div className="cart-page">
@@ -94,7 +96,12 @@ const Cart = () => {
                 <span>₹{getTotalPrice().toLocaleString()}</span>
               </div>
             </div>
-            <button className="checkout-btn">Proceed to Checkout</button>
+            <button
+              className="checkout-btn"
+              onClick={() => navigate("/opening-soon")}
+            >
+              Proceed to Checkout
+            </button>
             <Link to="/shop" className="continue-shopping">
               Continue Shopping
             </Link>

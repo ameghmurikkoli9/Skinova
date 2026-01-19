@@ -62,6 +62,7 @@ const Hero4 = () => {
           <img src={MainImg} alt="Product mockup" className="main-img-img" />
         </div>
           
+          
     </div>
 <br /><br />
     <div className="stay-updated">

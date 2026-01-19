@@ -265,7 +265,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -311,6 +311,210 @@
   transform: rotate(10deg);
 }
 
+@media (max-width: 1024px) {
+  .heading {
+    margin-top: -16rem;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .main-img-img {
+    height: 680px;
+  }
+
+  .stay-updated {
+    width: 92%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .stay-updated h2 {
+    position: static;
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .stay-updated p {
+    position: static;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .stay-updated img {
+    position: static;
+    width: 260px;
+    margin: 2rem auto;
+  }
+
+  .email-form {
+    width: 100%;
+    max-width: 520px;
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin-top: -10rem;
+  }
+
+  .heading h1 {
+    font-size: 2.4rem;
+  }
+
+  .main-img-img {
+    height: 520px;
+  }
+
+  .stay-updated h2 {
+    font-size: 3rem;
+  }
+
+  .email-form {
+    height: 60px;
+  }
+
+  .email-form input {
+    font-size: 1.2rem;
+  }
+
+  .email-form button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .instagram h2 {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+
+  .insta-card {
+    flex: 0 0 300px;
+    height: 300px;
+  }
+
+  .insta-heading-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    margin-top: -6rem;
+  }
+
+  .heading h1 {
+    font-size: 1.6rem;
+    margin-top: 8rem;
+  }
+
+.heading .author{
+  font-size: 0.8rem;
+}
+
+  .main-img-img {
+    height: 420px;
+  }
+
+  .stay-updated {
+    border-radius: 28px;
+    width: 90vw !important;
+    height: 80vh !important;
+  }
+
+  .stay-updated h2 {
+    font-size: 3rem  !important;
+    line-height: 1.2;
+  }
+
+  .stay-updated p {
+    position: relative !important;
+    top: 3rem !important;
+    font-size: 1.6rem !important;
+    line-height: 1.4;
+  }
+
+  .stay-updated h2 span {
+    font-size: 3rem !important;
+  }
+
+  .email-form {
+    gap: 0.75rem;
+    padding: 1px !important;
+    height: 8vh !important;
+    width: 70vw !important; 
+    position: relative;
+    right: 0rem !important;
+    top: 3rem !important;
+
+    line-height: 1rem;
+    font-size: 5px !important;
+    align-items: center;
+    justify-items: center;
+
+    
+
+  }
+
+  .email-form input {
+   
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .email-form input::placeholder {
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    top: -0.3rem;
+
+  }
+
+  .email-form button {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem !important;
+    text-align: center;
+    padding: 0;
+  }
+
+  .insta-heading-row {
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 4rem !important  ;
+    margin-top: -1rem !important;
+  }
+
+  .insta-heading-images {
+    display: none; /* hide the stacked images on mobile */
+  }
+
+  .insta-heading-text {
+    position: static; /* remove the vertical offset */
+    top: auto;
+    font-size: 1.5rem !important;
+    display: inline; /* behave like normal text */
+    text-align: center;
+    font-weight: bold !important ;
+    
+  }
+  .insta-card {
+    flex: 0 0 240px;
+    max-height: 240px;
+    height: 240px;
+    max-width: 240px;
+  }
 
 
+  .insta-viewport{
+    height: 20rem;
+  }
+}
 

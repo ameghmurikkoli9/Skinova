@@ -17,6 +17,7 @@ import Lotion from './Pages/Lotion.jsx'
 import Cleanser from './Pages/Cleanser.jsx'
 import Favourite from './Pages/Favourite.jsx'
 import Cart from './Pages/Cart.jsx'
+import OpeningSoon from './Pages/OpeningSoon.jsx'
 
 // Home page component
 function HomePage() {
@@ -58,7 +59,7 @@ function App() {
           <Route path="/favorites" element={<Favourite />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/account" element={<div></div>} />
-
+          <Route path="/opening-soon" element={<OpeningSoon />} />
         </Routes>
 
 

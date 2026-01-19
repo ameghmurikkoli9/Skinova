@@ -71,7 +71,16 @@
   flex: 1; /* Center alignment helper */
   display: flex;
   justify-content: center;
+    transition: transform 0.2s ease;
 
+
+}
+
+.nav-center:hover{
+  color: #000;
+    transform: scale(1.1);
+
+  
 }
 
 /* RIGHT SECTION - Icons */
@@ -146,6 +155,7 @@
 
 /* Shop Dropdown Content */
 .dropdown-content {
+  color: black;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -370,39 +380,87 @@
   color: #666;
 }
 
-@media screen and (max-width: 1024px) {
+
+
+
+@media (max-width: 1024px) {
   .nav {
-    padding: 10px 20px;
-    width: 90%;
+    height: 5.5rem;
+    padding: 0.9rem 1.8rem;
+    width: 96%;
   }
 
   .nav-left {
-    display: none; /* Hide desktop links */
+    gap: 1.4rem;
   }
 
-  .mobile-menu-btn {
-    display: block; /* Show hamburger */
+  .nav-left a,
+  .nav-left .shop-nav-link,
+  .nav-left .collections-nav-link {
+    font-size: 1.1rem;
   }
 
   .nav-center {
-    font-size: 1.5rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 2.1rem;
   }
 
   .nav-right {
-    gap: 10px;
+    gap: 1.6rem;
+  }
+
+  .dropdown-content {
+    width: 520px;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .collections-dropdown-content {
+    width: 560px;
+    height: 300px;
+  }
+
+  .collection-category-image {
+    height: 200px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .nav-right .icons:nth-child(2), /* Person */
-  .nav-right .icons:nth-child(3) { /* Search */
+@media (max-width: 768px) {
+  .nav-left {
     display: none;
   }
-  
-  .flag {
-    display: none;
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav {
+    height: 5.2rem;
+    padding: 0.9rem 1.2rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .nav-center {
+    font-size: 1.8rem;
+  }
+
+  .nav-right {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    height: 4.8rem;
+    padding: 0.8rem 1rem;
+    width: 94%;
+  }
+
+  .nav-center {
+    font-size: 1.6rem;
+  }
+
+  .nav-right {
+    gap: 0.9rem;
   }
 }

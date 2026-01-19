@@ -30,6 +30,11 @@ body {
   min-height: 100vh;
 }
 
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -68,4 +73,19 @@ button:focus-visible {
   }
 }
 
+@media (max-width: 1024px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: block;
+    place-items: initial;
+    min-height: auto;
+  }
+}
 

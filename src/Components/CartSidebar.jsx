@@ -10,15 +10,21 @@ const CartSidebar = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <>
+    <div className="cart-wrapper">
       {/* Overlay */}
       <div className="cart-overlay" onClick={onClose}></div>
 
       {/* Sidebar */}
-      <div className="cart-sidebar">
+      <div
+        className="cart-sidebar"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="cart-sidebar-header">
           <h2 className="cart-sidebar-title">Cart ({getTotalItems()})</h2>
-          <button className="cart-close-btn" onClick={onClose}>
+          <button
+            className="cart-close-btn"
+            onClick={onClose}
+          >
             <IoCloseOutline size={24} />
           </button>
         </div>
@@ -92,7 +98,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -400,3 +400,232 @@
   color: white;
   font-weight: 600;
 }
+
+@media (max-width: 1024px) {
+  .Poster2-Heading h1 {
+    font-size: 3.6rem;
+    margin-left: 4vw;
+  }
+
+  .reviews {
+    margin-left: auto;
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .poster2-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+
+  .poster2-content .left {
+    height: auto;
+  }
+
+  .poster2-content .left-content {
+    width: 100%;
+    height: 420px;
+  }
+
+  .poster2-content .left-overlay {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .poster2-content .right-content1,
+  .poster2-content .right-content2 {
+    width: 100%;
+    height: 320px;
+  }
+
+  .poster2-content .right-content2-text {
+    right: 2rem;
+    top: 2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Poster2-Heading h1 {
+    font-size: 3rem;
+  }
+
+  .reviews p {
+    font-size: 1.2rem;
+  }
+
+  .poster2-content .left-content {
+    height: 320px;
+  }
+
+  .poster2-content .right-content1,
+  .poster2-content .right-content2 {
+    height: 280px;
+  }
+
+  .poster2-content .right-content2-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .poster2-content .right-content2-text .icon-row {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+    .poster-content{
+      max-width: 420px;
+      margin-left: -2rem;
+    }
+  .poster-content h1{
+    font-size: 4rem;
+
+  }
+
+  .poster-content p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  .Poster2-Heading h1 {
+    font-size: 2.4rem;
+  }
+
+  .poster2-content .left-content {
+    height: 500px;
+    width: 90vw;
+  }
+
+
+  .poster2-content .right-content2{
+    max-width: 90vw;
+    justify-self: center;
+    align-self: center;
+  }
+  .poster2-content .right-content1,
+  .poster2-content .right-content2 {
+    height: 220px;
+    background: transparent;
+  }
+
+  .poster2-content .right-content2-text {
+    right: 1.2rem;
+    top: 0.2rem;
+    width: 85%;
+  }
+
+  .poster2-content .right-content2-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .poster2-content .right-content2-text .icon-row{
+    margin-top: -1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    bottom: -5rem;
+  }
+
+  .poster2-content .right-content2-text .icon{
+    width: 26px;
+    height: 26px;
+  }
+
+  .reviews .numbers{
+    margin-top: -1.8rem;
+  }
+  .reviews .stars{
+    margin-left: 13.3rem;
+    position: relative;
+    top: -1.5rem;
+  }
+
+  .reviews{
+    margin-top: -2rem;
+  }
+  .right-text{
+    margin-right: -2rem;
+    margin-top: -0.5rem;
+  }
+  .right-text h3 {
+    font-size: 1.7rem;
+    max-width: 420px;
+    position: relative;
+    right: 10rem; 
+    top: -1rem;
+  }
+  .right-text h4{
+    font-size: 1.7rem;
+    position: relative;
+    right: 10rem; 
+    top: -1.7rem;
+
+  }
+  .right-text p{
+    font-size: 1rem;
+    position: relative;
+    right: 10rem; 
+    top: -1rem;
+}
+
+.recycle .recycle-icon{
+
+width: 35px;
+height: 35px;
+position: relative;
+right: 21rem;
+top: -2.5rem;
+}
+
+.Poster{
+  border-radius: 0%;
+}
+
+.left-overlay{
+  max-width: 85vw;
+  max-height: 30vh;
+  height: 25vh;
+  /* position: relative;
+  bottom: -4rem; */
+  margin-top: -4rem;
+}
+
+.left-overlay-content{
+  position: relative;
+  left: -1rem;
+  top: -1rem;
+}
+
+.left-overlay-content h2{
+font-size: 1.8rem;
+line-height: 1.7rem;
+}
+
+.left-overlay-content p{
+  font-size: 1rem;
+  max-width: 70vw;
+}
+
+.overlay-icon{
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 0.9rem;
+  right: -0.2rem;
+}
+
+.right-img{
+  max-width: 90vw;
+  align-self: center;
+  justify-self: center;
+}
+}
+
+

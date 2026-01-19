@@ -21,4 +21,96 @@ body {
 main {
   margin-top: 140px; /* offset fixed navbar */
   min-height: 100vh;
+  width: 100%;
+}
+/* 
+@media (max-width: 1024px) {
+  main {
+    margin-top: 120px;
+  }
+} */
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: block;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #root > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  main {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .stay-updated,
+  .instagram,
+  .approved,
+  .items,
+  .Poster,
+  .poster2-content,
+  .categories,
+  .products-grid,
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stay-updated h2,
+  .stay-updated p,
+  .stay-updated img {
+    left: auto !important;
+    right: auto !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Poster2-Heading h1,
+  .reviews,
+  .heading h1,
+  .poster-content,
+  .hero-text,
+  .slide-content2,
+  .slide-content3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

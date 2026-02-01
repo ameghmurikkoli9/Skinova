@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  height: 6rem;
+  height: 5rem;
   max-width: 1600px;
   padding: 1rem 2.5rem;
   background: #ffffff;
@@ -72,13 +72,15 @@
   display: flex;
   justify-content: center;
     transition: transform 0.2s ease;
-
+    will-change: transform;
+    backface-visibility: hidden;
 
 }
 
 .nav-center:hover{
-  color: #000;
-    transform: scale(1.1);
+  /* color: #000; */
+  transform: scale(1.1);
+    text-decoration: none;
 
   
 }
@@ -90,6 +92,8 @@
   justify-content: flex-end;
   gap: 2.5rem;
   flex: 1; /* Balances the left section */
+  width: 30px;
+  height: 30px;
 }
 
 .icons {
@@ -383,47 +387,6 @@
 
 
 
-@media (max-width: 1024px) {
-  .nav {
-    height: 5.5rem;
-    padding: 0.9rem 1.8rem;
-    width: 96%;
-  }
-
-  .nav-left {
-    gap: 1.4rem;
-  }
-
-  .nav-left a,
-  .nav-left .shop-nav-link,
-  .nav-left .collections-nav-link {
-    font-size: 1.1rem;
-  }
-
-  .nav-center {
-    font-size: 2.1rem;
-  }
-
-  .nav-right {
-    gap: 1.6rem;
-  }
-
-  .dropdown-content {
-    width: 520px;
-    padding: 1.5rem;
-    gap: 2rem;
-  }
-
-  .collections-dropdown-content {
-    width: 560px;
-    height: 300px;
-  }
-
-  .collection-category-image {
-    height: 200px;
-  }
-}
-
 @media (max-width: 768px) {
   .nav-left {
     display: none;
@@ -450,17 +413,92 @@
 }
 
 @media (max-width: 480px) {
+  .nav-wrapper {
+    top: 10px;
+  }
+
   .nav {
-    height: 4.8rem;
-    padding: 0.8rem 1rem;
-    width: 94%;
+    height: 4.4rem;
+    padding: 0.6rem 0.9rem;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+    border-radius: 14px;
   }
 
+  /* Hide left links completely */
+  .nav-left {
+    display: none;
+  }
+
+  /* Center logo perfectly */
   .nav-center {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 10%;
   }
 
+  /* Right icons tighter */
   .nav-right {
-    gap: 0.9rem;
+    gap: 0.5rem;
   }
+
+  .icons {
+    transform: scale(0.9);
+    width: 2.5rem;
+  }
+
+  /* Show hamburger */
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Cart badge smaller */
+  .cart-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 0.6rem;
+    top: -4px;
+    right: -4px;
+  }
+
+  /* Mobile menu full screen polish */
+  .mobile-menu-overlay {
+    padding-top: 10px;
+  }
+
+  .mobile-menu-header {
+    padding: 16px 20px;
+  }
+
+  .mobile-menu-title {
+    font-size: 1.3rem;
+    color: #000;
+  }
+
+  .mobile-menu-links {
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .mobile-menu-links a {
+    font-size: 1.7rem;
+  }
+  /* .flag{
+    size: 2rem !important;
+  } */
+}
+@media (max-width: 1440px) {
+
+  .nav{
+    height: 10vh !important;
+  }
+}
+@media (max-width: 1200px) {
+  .nav .nav-left{
+    gap: 1rem !important;
+    font-size: 0.5rem !important;
+  }
+
 }

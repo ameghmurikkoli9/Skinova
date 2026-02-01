@@ -59,27 +59,27 @@ const About = () => {
         </div>
       </section>
 
-      <div className="info-box">
-        <div className="info info-box-1">
+      <div className="about-info-box">
+        <div className="about-info about-info-box-1">
           <h2>100%</h2>
           <h3>Natural Ingredients</h3>
           <p>
             Pure, safe, and sustainably <br /> sourced skincare.
           </p>
         </div>
-        <div className="info info-box-2">
+        <div className="about-info about-info-box-2">
           <h2>97%</h2>
           <h3>Customer Satisfaction</h3>
           <p>
             Trusted by happy, glowing <br /> customers worldwide.
           </p>
         </div>
-        <div className="info info-box-3">
+        <div className="about-info about-info-box-3">
           <h2>85%</h2>
           <h3>Less Packaging</h3>
           <p>Eco-friendly designs for a greener planet.</p>
         </div>
-        <div className="info info-box-4">
+        <div className="about-info about-info-box-4">
           <h2>{"9/10"}</h2>
           <h3>Customer Satisfaction</h3>
           <p>
@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="reviews">
+      <div className="about-reviews">
         <h1>
           {" "}
           Crafted with Care
@@ -96,19 +96,19 @@ const About = () => {
           <span> Inspired by Nature</span>
         </h1>
 
-        <p className="stars">
+        <p className="about-stars">
           ★★★★★ <br />
-          <span className="ratings">4.7(1,109 reviews)</span>
+          <span className="about-ratings">4.7(1,109 reviews)</span>
         </p>
       </div>
 
       <div className="about-container">
-        <div className="left">
+        <div className="about-left">
           <div
-            className="left-img"
+            className="about-left-img"
             style={{ backgroundImage: `url(${leftImage})` }}
           ></div>
-          <div className="left-content">
+          <div className="about-left-content">
             <h5>Our Journey</h5>
             <h2>
               Why Your Skin <br />
@@ -122,25 +122,25 @@ const About = () => {
               delivering natural, <br /> effective, and sustainable skincare
               solutions.
             </p>
-            <div className="icon-list">
-              <div className="icon-row">
-                <HiEyeDropper size={32} color="black" className="icon" />
-                <span>
+            <div className="left-about-icon-list">
+              <div className="about-icon-row about-icon-row2">
+                <HiEyeDropper size={32} color="black" className="about-icon" />
+                <span >
                 Founded on Sustainability</span>
               </div>
-              <div className="icon-row">
-                <LuLeaf size={32} color="black" className="icon" />
+              <div className="about-icon-row about-icon-row2">
+                <LuLeaf size={32} color="black" className="about-icon" />
                 <span>Powered by Natural Ingredients</span>
               </div>
-              <div className="icon-row">
-                <FaHandHoldingHeart size={32} color="black" className="icon" />
+              <div className="about-icon-row about-icon-row2">
+                <FaHandHoldingHeart size={32} color="black" className="about-icon" />
                 <span>Driven by Innovation</span>
               </div>
             </div>
           </div>
         </div>
-        <div className="right">
-          <div className="right-content">
+        <div className="about-right">
+          <div className="about-right-content">
             <h5>About Us</h5>
             <h2>
               Simple Rituals
@@ -157,27 +157,27 @@ const About = () => {
               <br />
               that care for your skin and our planet.
             </p>
-            <div className="icon-list">
-              <div className="icon-row">
-                <LuLeaf size={32} color="blackblack" className="icon" />
+            <div className="about-icon-list">
+              <div className="about-icon-row">
+                <LuLeaf size={32} color="blackblack" className="about-icon" />
                 <span>100% Natural Ingredients</span>
               </div>
               <div className="icon-row">
-                <PiPackage size={32} color="blackblack" className="icon" />
-                <span>Sustainable Packaging</span>
+                <PiPackage size={32} color="blackblack" className="about-icon" />
+                <span className="sustainable">Sustainable Packaging</span>
               </div>
-              <div className="icon-row">
+              <div className="about-icon-row">
                 <PiDog
                   size={32}
                   color="blackblack"
-                  className="icon"
+                  className="about-icon"
                 />
                 <span>Cruelty-Free Commitment</span>
               </div>
             </div>
           </div>
           <div
-            className="right-image"
+            className="about-right-image"
             style={{ backgroundImage: `url(${rightImage})` }}
           ></div>
         </div>

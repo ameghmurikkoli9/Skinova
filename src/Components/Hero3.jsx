@@ -16,8 +16,8 @@ const Hero3 = () => {
   return (
     <>
       {/* POSTER 1 */}
-      <div className="Poster">
-        <div className="poster-content">
+      <div className="h3-Poster">
+        <div className="h3-poster-content">
           <h1>
             Eco Friendly, <br /> <span>Skin Friendly</span>
           </h1>
@@ -30,23 +30,23 @@ const Hero3 = () => {
       </div>
 
       {/* POSTER 2 */}
-      <div className="Poster2">
-        <div className="Poster2-Heading">
+      <div className="h3-Poster2">
+        <div className="h3-Poster2-Heading">
           <h1>Why Your Skin</h1>
           <h1>
             <span>Deserves the Best</span>
           </h1>
         </div>
 
-        <div className="reviews">
-          <p className="stars">★★★★★</p>
-          <p className="numbers">4.7 (1,109 reviews)</p>
+        <div className="h3-reviews">
+          <p className="h3-stars">★★★★★</p>
+          <p className="h3-numbers">4.7 (1,109 reviews)</p>
         </div>
 
-        <div className="poster2-content">
-          <div className="left">
+        <div className="h3-poster2-content">
+          <div className="h3-left">
             <video
-              className="left-content"
+              className="h3-left-content"
               src={videoSrc}
               autoPlay
               muted
@@ -55,18 +55,18 @@ const Hero3 = () => {
             />
 
             {/* OVERLAY CARD */}
-            <div className="left-overlay">
-              <div className="left-overlay-content">
-                <div className="icon-wrapper">
+            <div className="h3-left-overlay">
+              <div className="h3-left-overlay-content">
+                <div className="h3-icon-wrapper">
                   <img
                     src={checkmarkIcon}
                     alt="Checkmark"
-                    className="overlay-icon"
+                    className="h3-overlay-icon"
                   />
                 </div>
 
-                <h2>Proven</h2>
-                <h2 className="effectiveness">Effectiveness</h2>
+                <h2 className="h3-effectiveness">Proven</h2>
+                <h2 className="h3-effectiveness">Effectiveness</h2>
 
                 <p>
                   Every product is carefully crafted to meet <br />
@@ -77,18 +77,18 @@ const Hero3 = () => {
           </div>
 
           {/* RIGHT CARDS */}
-          <div className="right">
-            <div className="right-content1">
-              <img src={RightImg} alt="Product preview" className="right-img" />
+          <div className="h3-right">
+            <div className="h3-right-content1">
+              <img src={RightImg} alt="Product preview" className="h3-right-img" />
 
-              <div className="recycle">
-                <RiRecycleLine size={56} className="recycle-icon" color="white"/>
+              <div className="h3-recycle">
+                <RiRecycleLine size={56} className="h3-recycle-icon" color="white"/>
               </div>
 
-              <div className="right-text">
-                <h3 className="right-text-title">Eco-Friendly</h3>
-                <h4 className="right-text-sub">Packaging</h4>
-                <p className="right-text-desc">
+              <div className="h3-right-text">
+                <h3 className="h3-right-text-title">Eco-Friendly</h3>
+                <h4 className="h3-right-text-sub">Packaging</h4>
+                <p className="h3-right-text-desc">
                   Eco-friendly materials designed to care for the planet as much
                   as your skin.
                 </p>
@@ -96,33 +96,33 @@ const Hero3 = () => {
             </div>
 
             {/* ✅ ONLY CHANGE: text added inside right-content2 */}
-            <div className="right-content2">
+            <div className="h3-right-content2">
               <img
                 src={RightImg2}
                 alt="Natural ingredients"
-                className="right-img"
+                className="h3-right-img"
               />
 
-              <div className="right-content2-text">
+              <div className="h3-right-content2-text">
                 <h2 className="100%">100% Natural</h2>
                 <h2 className=" 100% you">100% You</h2>
-                <div className="icon-list">
-                  <div className="icon-row">
+                <div className="h3-icon-list">
+                  <div className="h3-icon-row">
                     <HiEyeDropper size={32}  
                       color="white"
-                    className="icon" />
+                    className="h3-icon" />
                     <span>No Harsh Chemicals</span>
                   </div>
-                  <div className="icon-row">
+                  <div className="h3-icon-row">
                     <LuLeaf size={32} 
                     color="white"
-                    className="icon" />
+                    className="h3-icon" />
                     <span>Plant-Based Goodness</span>
                   </div>
-                  <div className="icon-row">
+                  <div className="h3-icon-row">
                     <FaHandHoldingHeart size={32} 
                     color="white"
-                    className="icon" />
+                    className="h3-icon" />
                     <span>Ethically Sourced</span>
                   </div>
                 </div>

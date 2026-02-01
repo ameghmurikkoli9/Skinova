@@ -1,0 +1,59 @@
+.box .h {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-family: Sentient, "Sentient Placeholder", serif
+    ;
+}
+
+.box .main-answer2{
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+    color: rgb(100, 98, 98);
+    font-family: Figtree, "Figtree Placeholder", sans-serif
+    ;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 3rem 0;
+  }
+
+  .box .read-more{
+font-size: 1.1rem;
+  }
+  
+  @media (max-width: 480px){
+
+    .box .h {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: 400;
+        font-family: Sentient, "Sentient Placeholder", serif
+        ;
+    }
+    
+    .box .main-answer2{
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+        color: rgb(100, 98, 98);
+        font-family: Figtree, "Figtree Placeholder", sans-serif;
+        width: auto;
+      }
+    
+      .divider {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        margin: 3rem 0;
+      }
+    
+      .box .read-more{
+    font-size: 1rem;
+    text-decoration: underline;
+      }
+  }

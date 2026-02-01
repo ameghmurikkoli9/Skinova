@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { useFavorites } from "../Context/FavoritesContext.jsx";
 import { useCart } from "../Context/CartContext.jsx";
 import { IoHeartOutline, IoHeart } from "react-icons/io5";
@@ -164,6 +164,21 @@ const allProducts = [
 
 const Shop = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const focusId = params.get("focus");
+
+    if (focusId) {
+      setTimeout(() => {
+        const el = document.getElementById(`product-${focusId}`);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 200);
+    }
+  }, [location]);
 
   const instaCards = [
     { src: Img1, alt: "Natural Glow" },
@@ -566,7 +581,7 @@ const Shop = () => {
           <div className="products-grid">
             {displayProducts.length > 0 ? (
               displayProducts.map((product) => (
-                <div className="product-card" key={product.id}>
+                <div className="product-card" id={`product-${product.id}`} key={product.id}>
                   <div className="product-image-wrapper">
                     <img
                       src={product.image}

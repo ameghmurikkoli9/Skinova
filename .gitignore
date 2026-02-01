@@ -24,9 +24,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore all videos by default
-*.mp4
 
-# Allow only compressed background video
-!src/Images/bg-video.mp4
-</file>
+

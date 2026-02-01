@@ -5,6 +5,7 @@ import { IoPersonOutline, IoSearchOutline, IoHeartOutline, IoCloseOutline, IoChe
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { useCart } from "../Context/CartContext.jsx";
 import CartSidebar from "./CartSidebar.jsx";
+import Searchbar from "./Searchbar.jsx";
 
 // Import product images for dropdown
 import Img2 from "../Images/nataliya-melnychuk-PdzMmdHqN2c-unsplash.jpg";
@@ -28,6 +29,7 @@ export default function Navbar() {
   const [collectionsHoverTimeout, setCollectionsHoverTimeout] = useState(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   // Featured products for dropdown
   const featuredProducts = [
@@ -69,18 +71,18 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Show navbar at the top of the page
       if (currentScrollY < 10) {
         setIsScrollingDown(false);
-      } 
+      }
       // Hide navbar when scrolling down, show when scrolling up
       else if (currentScrollY > lastScrollY) {
         setIsScrollingDown(true);
       } else {
         setIsScrollingDown(false);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
@@ -101,7 +103,7 @@ export default function Navbar() {
       <nav className="nav">
         {/* LEFT MENU */}
         <div className="nav-left">
-          <div 
+          <div
             className="shop-link-wrapper"
             onMouseEnter={() => {
               if (shopHoverTimeout) {
@@ -126,10 +128,10 @@ export default function Navbar() {
             <NavLink to="/shop" className="shop-nav-link">
               Shop {isShopHovered ? <IoCloseOutline className="close-icon" /> : <span>+</span>}
             </NavLink>
-            
+
             {/* Dropdown Menu */}
             {isShopHovered && (
-              <div 
+              <div
                 className="shop-dropdown"
                 onMouseEnter={() => {
                   if (shopHoverTimeout) {
@@ -172,8 +174,8 @@ export default function Navbar() {
                         <div className="product-discount-badge">
                           {product.discount}% OFF
                         </div>
-                        <img 
-                          src={product.image} 
+                        <img
+                          src={product.image}
                           alt={product.name}
                           className="dropdown-product-image"
                         />
@@ -186,7 +188,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <div 
+          <div
             className="collections-link-wrapper"
             onMouseEnter={() => {
               if (collectionsHoverTimeout) {
@@ -211,10 +213,10 @@ export default function Navbar() {
             <NavLink to="/collections" className="collections-nav-link">
               Collections {isCollectionsHovered ? <IoCloseOutline className="close-icon" /> : <span>+</span>}
             </NavLink>
-            
+
             {/* Collections Dropdown Menu */}
             {isCollectionsHovered && (
-              <div 
+              <div
                 className="collections-dropdown"
                 onMouseEnter={() => {
                   if (collectionsHoverTimeout) {
@@ -230,15 +232,15 @@ export default function Navbar() {
                 <div className="collections-dropdown-content">
                   {collectionsCategories.map((category) => (
                     <div key={category.name} className="collection-category-card">
-                      <img 
-                        src={category.image} 
+                      <img
+                        src={category.image}
                         alt={category.name}
                         className="collection-category-image"
                       />
                       <div className="collection-category-info">
                         <h3 className="collection-category-name">{category.name}</h3>
-                        <Link 
-                          to={category.link} 
+                        <Link
+                          to={category.link}
                           className="collection-arrow-btn"
                           onClick={() => setIsCollectionsHovered(false)}
                         >
@@ -261,40 +263,42 @@ export default function Navbar() {
 
         {/* RIGHT ICONS */}
         <div className="nav-right">
-          <button className=" icons flag" style={{fontSize: "3rem"}}>🇮🇳</button>
-          <button className="icons"><IoPersonOutline size={35}/></button>
-          <button className="icons"><IoSearchOutline size={35} /></button>
-          <button className="icons" onClick={() => navigate("/favorites")}><IoHeartOutline size={35}/></button>
+          <button className="icons" onClick={() => setIsSearchOpen(true)}>
+            <IoSearchOutline size={35} />
+          </button>          
+          <button className="icons" onClick={() => navigate("/favorites")}><IoHeartOutline size={35} /></button>
 
           <button className="icons cart-icon-wrapper" onClick={() => setIsCartOpen(true)}>
-            <LiaShoppingBagSolid size={35}/>
+            <LiaShoppingBagSolid size={35} />
             {getTotalItems() > 0 && (
               <span className="cart-badge">{getTotalItems()}</span>
             )}
           </button>
+            <button className="icons"><IoPersonOutline size={35} /></button>
 
           <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(true)}>
             <IoMenuOutline size={24} />
           </button>
         </div>
 
-      <div className={`mobile-menu-overlay ${isMobileMenuOpen ? "open" : ""}`}>
-        <div className="mobile-menu-header">
-           <span className="mobile-menu-title">Menu</span>
-           <button className="mobile-menu-close" onClick={() => setIsMobileMenuOpen(false)}>
-             <IoCloseOutline size={32} />
-           </button>
+        <div className={`mobile-menu-overlay ${isMobileMenuOpen ? "open" : ""}`}>
+          <div className="mobile-menu-header">
+            <span className="mobile-menu-title">Menu</span>
+            <button className="mobile-menu-close" onClick={() => setIsMobileMenuOpen(false)}>
+              <IoCloseOutline size={32} />
+            </button>
+          </div>
+          <div className="mobile-menu-links">
+            <NavLink to="/shop" onClick={() => setIsMobileMenuOpen(false)}>Shop</NavLink>
+            <NavLink to="/collections" onClick={() => setIsMobileMenuOpen(false)}>Collections</NavLink>
+            <NavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</NavLink>
+            <NavLink to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</NavLink>
+            <NavLink to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</NavLink>
+          </div>
         </div>
-        <div className="mobile-menu-links">
-          <NavLink to="/shop" onClick={() => setIsMobileMenuOpen(false)}>Shop</NavLink>
-          <NavLink to="/collections" onClick={() => setIsMobileMenuOpen(false)}>Collections</NavLink>
-          <NavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</NavLink>
-          <NavLink to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</NavLink>
-          <NavLink to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</NavLink>
-        </div>
-      </div>
       </nav>
       <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      <Searchbar open={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </header>
   );
 }

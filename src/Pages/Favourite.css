@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: #d7cec4;
   padding: 8rem 4rem 4rem;
+  margin-top: 2rem;
 }
 
 .favourite-title {
@@ -126,11 +127,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: 1200px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 @media (max-width: 768px) {
   .favourite-page {
@@ -158,15 +155,7 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .favourite-title {
-    font-size: 5rem;
-  }
 
-  .product-image {
-    height: 260px;
-  }
-}
 
 @media (max-width: 480px) {
   .favourite-title {
@@ -296,7 +285,7 @@
 }
 
 .product-btn:hover {
-  background: #2d3326;
+  background: #4d5545;
   transform: translateY(-2px);
 }
 
@@ -358,3 +347,4 @@
   min-width: 45px;
   padding: 0 0.5rem;
 }
+

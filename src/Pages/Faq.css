@@ -1,0 +1,429 @@
+.faq-Heading{
+    font-family: Sentient, "Sentient Placeholder", serif;
+    font-size: 6rem;
+    font-weight: 500;
+    color: #1a1c17;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.faq-search-bar{
+  max-width: 680px;
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0.6rem 0.75rem 0.6rem 1.25rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+
+.faq-search-input{
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  background: transparent;
+  color: #1a1c17;
+}
+
+.faq-search-input::placeholder{
+  color: #9a9a9a;
+  font-size: 1.5rem;
+  justify-self: center ;
+  align-self: center;
+
+}
+
+.faq-search-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  bottom: 1rem;
+}
+
+.faq-search-btn:hover{
+  background: rgba(0,0,0,0.04);
+}
+
+
+  
+  
+    .faq-faq-card {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center; /* center the rows */
+      height: auto !important;
+    }
+
+  
+
+    .faq-faq-card1, .faq-faq-card2, .faq-faq-card3, .faq-faq-card4 {
+      width: 40vw;   
+      height: 35vh;           
+      background: white;
+      padding: 2rem;
+      border-radius: 24px;
+      color: black;
+      height: auto !important;
+    }
+
+  .faq-faq-card h2 {
+    margin-bottom: 2rem;
+    font-family:   Sentient, "Sentient Placeholder", serif ;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+
+  }
+
+  .faq-faq-card ul li{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    margin-left: 4rem;
+    font-family: Figtree, "Figtree Placeholder", sans-serif
+    ;
+    position: relative;
+    top: -1rem;
+    
+  }
+  
+
+  .faq-faq-card1, .faq-faq-card2, .faq-faq-card3, .faq-faq-card4 ul .faq-view-all {
+    list-style: none;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease-in-out ;
+    display: inline-block;
+    list-style: none;
+  }
+
+  .faq-faq-card ul .faq-view-all:hover{
+    transform: scale(1..5);
+  }
+
+
+  .box{
+    background: white;
+    width: 40vw;
+    height: auto;
+    padding: 5rem;
+    padding-top: 4rem;
+    border-radius: 2rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 4rem;
+    font-family: Figtree, "Figtree Placeholder", sans-serif
+    ;
+  }
+  .main{
+    margin-top: 10rem;
+    max-width: 100vw;
+    justify-self: center;
+    align-self: center;
+    color: #1a1c17;
+    
+  }
+
+  .question{
+    text-align: center;
+    font-size: 5rem;
+    font-family: Sentient, "Sentient Placeholder", serif;
+    font-style: italic;
+    line-height: 5.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    max-width: 50vw;
+  }
+
+  .box .main-answer{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .answer-short{
+    font-size: 1.5rem;
+    color: #676565;
+  }
+  .answer-short2{
+    font-size: 1.5rem;
+    color: #676565;
+  }
+  .answer-short3{
+    font-size: 1.5rem;
+    color: #676565;
+  }
+  .answer-short span{
+    font-weight: bold;
+  }
+
+
+
+@media (max-width: 480px){
+  .faq-Heading{
+    font-family: Sentient, "Sentient Placeholder", serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #1a1c17;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-style: italic;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.faq-search-bar{
+  max-width: 90vw !important;
+  max-height: 3rem;
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.6rem 0.75rem 0.6rem 1.25rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+
+.faq-search-input{
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: Sentient, "Sentient Placeholder", serif;
+  background: transparent;
+  color: #1a1c17;
+}
+
+.faq-search-input::placeholder{
+  color: #9a9a9a;
+  font-size: 1.2rem;
+  justify-self: center ;
+  align-self: center;
+
+}
+
+.faq-search-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.faq-search-btn:hover{
+  background: rgba(0,0,0,0.04);
+}
+
+
+  
+  
+    .faq-faq-card {
+      margin: 0 auto;
+      padding: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center; /* center the rows */
+      margin-bottom: 2rem;
+    }
+
+  
+
+    .faq-faq-card1, .faq-faq-card2, .faq-faq-card3, .faq-faq-card4 {
+      width: 80vw;   
+      height: auto;           /* two cards per row */
+      background: white;
+      padding: 2rem;
+      border-radius: 24px;
+      color: black;
+    }
+
+  .faq-faq-card h2 {
+    margin-bottom: 2rem;
+    font-family:   Sentient, "Sentient Placeholder", serif ;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+
+  }
+
+  .faq-faq-card ul li{
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-left: 2rem;
+    font-family: Figtree, "Figtree Placeholder", sans-serif;
+    text-decoration: underline;
+    
+  }
+  
+
+  .faq-faq-card ul .faq-view-all{
+    margin-top: 1.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out ;
+    display: inline-block;
+  }
+
+  .faq-faq-card ul .faq-view-all:hover{
+    transform: scale(1.15);
+  }
+
+
+  .main .box{
+    background: white;
+    width: 70vw !important;
+    height: auto;
+    padding: 1rem !important;
+    padding-top: 2rem;
+    border-radius: 2rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 3rem !important;
+    font-family: Figtree, "Figtree Placeholder", sans-serif
+    ;
+  }
+  .main{
+    margin-top: 8rem;
+    max-width: 100vw !important;
+    justify-self: center;
+    align-self: center;
+    color: #1a1c17;
+    
+  }
+
+  .main .question{
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: Sentient, "Sentient Placeholder", serif;
+    font-style: italic;
+    line-height: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    max-width: 90vw;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .box .main-answer{
+    font-size: 1.5rem !important;
+    max-width: 100vw !important;
+    line-height: 1.9rem !important;
+    margin-bottom: 1rem;
+  }
+  .box .answer-short{
+    font-size: 1.1rem;
+    color: #676565;
+  }
+  .answer-short2{
+    font-size: 1.1rem;
+    color: #676565;
+  }
+  .answer-short3{
+    font-size: 1.1rem;
+    color: #676565;
+  }
+  .answer-short span{
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width: 1440px){
+
+  .faq-view-all{
+    list-style: none;
+    margin-top: 3rem !important;
+  }
+
+  .faq-questions li{
+    line-height: 2rem !important;
+    margin-top: 1rem;
+    text-decoration: underline !important;
+  }
+  .question{
+    font-size: 4rem !important;
+    max-width: 50vw !important;
+    width: 50vw !important;
+    text-align: center !important;
+  }
+  .box{
+    padding: 2rem !important;
+    width: 50vw !important;
+    max-width: 100vw;
+  }
+
+}
+@media (max-width: 1024px){
+
+  .faq-view-all{
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  .faq-questions li{
+    line-height: 2rem !important;
+    margin-top: 1rem;
+    text-decoration: underline !important;
+  }
+  
+  .question{
+    font-size: 4rem !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    text-align: center !important;
+  }
+  .box{
+    padding: 2rem !important;
+    width: 50vw !important;
+    max-width: 100vw;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .faq-faq-card h2{
+    font-size: 2rem;
+    
+  }
+  .faq-questions ul li {
+    font-size: 1.2rem;
+    width: auto;
+    margin-left: 2rem;
+    line-height: 1.9rem !important;
+    text-decoration: underline;
+  }
+  ul .faq-view-all{
+    margin-top: 2rem;
+  }
+
+  .box{
+    padding: 2rem !important;
+    width: 60vw !important;
+    max-width: 100vw;
+  }
+}

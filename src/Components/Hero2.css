@@ -14,7 +14,8 @@
 
 /* Cards */
 .card {
-  width: 25rem;
+  margin-top: 2rem;
+  width: 18rem;
   height: 18rem;
   display: flex;
   flex-direction: column;
@@ -170,20 +171,21 @@
 /* Shop text CTA */
 .shop-text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 18px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 600;
-  color: white;
-  display: block;
-  width: fit-content;
   background: #3c4433;
   color: white;
   padding: 10px 18px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  display: inline-block;
+  width: auto;
+  max-width: auto;
+  margin-left: 54rem;
+  height: 5vh;
+  
 }
 
 .shop-text:focus,
@@ -286,6 +288,7 @@
   .approved-title {
     font-size: 2.4rem;
     margin-bottom: 16px;
+    margin-top: 9rem;
   }
 
   .card {
@@ -321,13 +324,27 @@
   }
 
   .items {
-    gap: 20px;
+    gap: 20px;    
+  }
+  .item-image{
+    height: 45vh !important;
+    width: 30vw;
   }
 
-  .shop-text {
-    font-size: 1rem;
-    padding: 9px 14px;
-  }
+  
+    .shop-text {
+      width: auto !important;             
+      max-width: auto !important;
+      padding: 1px 22px !;       /* controls the button size */
+      border-radius: 5px;     
+      margin: 2rem ;     
+      display: inline-block;
+      text-align: center !important;
+      position: relative;
+      left: 0rem !important;
+      font-size: 1rem !important;
+    }
+  
 
   .poster2-content {
     grid-template-columns: 1fr;
@@ -370,6 +387,10 @@
 }
 
 @media (max-width: 480px) {
+  .h3-poster-content{
+    position: relative;
+    top: 17rem !important;
+  }
   .approved {
     padding: 28px 12px;
     margin-top: -3.5rem;
@@ -377,6 +398,15 @@
 
   .approved-title {
     font-size: 2rem;
+  }
+
+  .item{
+    width: 70vw !important;
+    height: 75vh;
+  }
+  .item-image{
+    height: 75vh !important;
+    width: 60vw;
   }
 
   .card {
@@ -401,9 +431,92 @@
   }
 
   .shop-text {
-    width: 100%;
-    max-width: 16rem;
+    width: auto !important;             
+    max-width: auto;
+    padding: 1px 22px;       /* controls the button size */
+    border-radius: 5px;     
+    margin: 2rem auto 0;     
+    display: inline-block;
+    text-align: center !important;
+    position: relative;
+    left: 1rem !important;
   }
 }
 
 
+
+
+@media (max-width: 1440px) {
+  .approved{
+    margin-bottom: -8rem;
+  }
+
+  .item{
+    width: 30vw;
+  }
+  .shop-text {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    font-weight: 600;
+    background: #3c4433;
+    color: white;
+    padding: 0px 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    max-width: auto;
+    height: 5vh;
+    position: relative;
+    left: -16rem;
+}
+}
+
+
+@media (max-width: 1024px) {
+  .item{
+    width: 30vw ;
+  }
+
+  .shop-text {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    font-weight: 600;
+    background: #3c4433;
+    color: white;
+    padding: 0px 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    width: auto !important;
+    max-width: auto !important;
+    height: 5vh;
+    position: relative;
+    left: -28rem;
+}
+.h3-Poster2-Heading h1{
+  font-size: 3rem !important;
+margin-left: 6rem  !important;
+}
+
+.h3-reviews p{
+ margin-top: 0.5rem;
+}
+.h3-poster2-content .h3-left {
+  width: 100%;
+  height: 90%;
+  border-radius: 28px;
+  overflow: hidden;
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+}

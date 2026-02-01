@@ -23,12 +23,7 @@ main {
   min-height: 100vh;
   width: 100%;
 }
-/* 
-@media (max-width: 1024px) {
-  main {
-    margin-top: 120px;
-  }
-} */
+
 
 @media (max-width: 768px) {
   main {
@@ -102,7 +97,7 @@ main {
     margin-right: auto;
   }
 
-  .Poster2-Heading h1,
+  .h3-Poster2-Heading h1,
   .reviews,
   .heading h1,
   .poster-content,

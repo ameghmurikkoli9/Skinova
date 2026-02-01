@@ -782,8 +782,7 @@
   .h3-left-overlay {
     max-width: 85vw;
     max-height: 30vh;
-    height: 25vh;
-    margin-top: -4rem;
+    height: auto !important;
   }
 
   .h3-left-overlay-content {

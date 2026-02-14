@@ -64,7 +64,6 @@ const Hero4 = () => {
           
           
     </div>
-<br /><br />
     <div className="stay-updated">
 
       <h2>Stay Updated! <br />
@@ -72,7 +71,7 @@ const Hero4 = () => {
       </h2>
 
       <p>
-        Be the first to know about new <br /> products, offers, and skincare tips.
+        Be the first to know about new products, offers, and skincare tips.
       </p>
 
 

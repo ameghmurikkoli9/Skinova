@@ -204,7 +204,7 @@
 /* Right-side textual panel that sits over the right of the image */
 .h3-right-text {
   position: absolute;
-  right: 55px;
+  right: 2rem;
   top: 50%;
   transform: translateY(-50%);
   color: white;
@@ -212,6 +212,11 @@
   border-radius: 12px;
   max-width: 46%;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
 }
 
 .h3-right-text-title {
@@ -315,8 +320,10 @@
   border-radius: 28px;
   overflow: hidden;
   box-shadow: none;
+  background: none;
   height: 32%;
   width: 86%;
+  padding: 1rem;
 }
 
 /* RIGHT CARD 2 */
@@ -345,8 +352,6 @@
 
 /* RIGHT CARD 2 TEXT - positioned on right side over the image */
 .h3-poster2-content .h3-right-content2-text {
-  position: absolute;
-  right: 18rem;
   top: 4rem;
   z-index: 2;
   color: white;
@@ -494,6 +499,12 @@
   }
 
 
+.h3-right-content2 .h3-right-content2-text{
+  display: flex !important;
+  flex-direction: column;
+  margin-inline: 2rem !important;
+}
+
   .h3-poster2-content {
     max-height: 100vh;
     height: 90vh;
@@ -536,19 +547,9 @@
     width: 25vw !important;
   }
 
-  .h3-right-content2-text h2 {
-    font-size: 2rem !important;
-    position: relative;
-    left: 2rem;
-    top: -3rem;
-    width: 30vw;
-  }
 
-  .h3-icon-list .h3-icon-row {
-    left: 2rem !important;
-    top: 0rem !important;
-    width: 35vw;
-  }
+
+
 
   .h3-poster2-content .h3-right-content1,
   .h3-poster2-content .h3-right-content2 {

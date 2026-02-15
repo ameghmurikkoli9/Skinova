@@ -32,15 +32,17 @@ const Hero3 = () => {
       {/* POSTER 2 */}
       <div className="h3-Poster2">
         <div className="h3-Poster2-Heading">
+          <div className="h3-Poster2-Heading-content">
           <h1>Why Your Skin</h1>
           <h1>
             <span>Deserves the Best</span>
           </h1>
-        </div>
+          </div>
 
         <div className="h3-reviews">
           <p className="h3-stars">★★★★★</p>
           <p className="h3-numbers">4.7 (1,109 reviews)</p>
+        </div>
         </div>
 
         <div className="h3-poster2-content">
@@ -69,7 +71,7 @@ const Hero3 = () => {
                 <h2 className="h3-effectiveness">Effectiveness</h2>
 
                 <p>
-                  Every product is carefully crafted to meet <br />
+                  Every product is carefully crafted to meet
                   the highest quality standards.
                 </p>
               </div>
@@ -104,8 +106,8 @@ const Hero3 = () => {
               />
 
               <div className="h3-right-content2-text">
-                <h2 className="100%">100% Natural</h2>
-                <h2 className=" 100% you">100% You</h2>
+                <h2 className="Natural">100% Natural</h2>
+                <h2 className="  you">100% You</h2>
                 <div className="h3-icon-list">
                   <div className="h3-icon-row">
                     <HiEyeDropper size={32}  

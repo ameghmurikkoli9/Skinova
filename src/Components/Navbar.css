@@ -454,22 +454,25 @@
   }
 
 .nav-center {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   flex: 1;
   display: flex;
   justify-content: flex-start;
 }
   /* Right icons tighter */
   .nav-right {
-      gap: 0rem;
+      gap: 0.9rem;
   flex: 1;
   justify-content: flex-end;
    min-width: 0; 
+   
   }
 
   .icons {
     transform: scale(0.9);
     width: 2.5rem;
+    width: 28px;
+   height: 28px;
   }
 
   /* Show hamburger */
